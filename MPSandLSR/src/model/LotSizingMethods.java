@@ -68,7 +68,7 @@ public class LotSizingMethods {
 
 	/**
 	 * calculate all net requirements to ordering in all t times using Economic
-	 * Order Quantity method.
+	 * Order Quantity method. Default: Weeks
 	 * <p>
 	 * 
 	 * @param ArrayList<Integer>:
