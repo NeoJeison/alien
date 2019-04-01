@@ -11,10 +11,10 @@ public class MasterPlanSchedule {
 	public static final String LEAST_UNIT_COST = "Least Unit Cost";
 	public static final String LEAST_TOTAL_COST = "Least Total Cost";
 	
-	public static final String ANNUAL = "Anual"; 
-	public static final String MONTHLY = "Mensual";
-	public static final String WEEKLY = "Semanal";
-	public static final String DAILY = "Diario";
+	public static final String ANNUAL = "Annual"; 
+	public static final String MONTHLY = "Monthly";
+	public static final String WEEKLY = "Weekly";
+	public static final String DAILY = "Daily";
 		
 	private String lotSizingMethod;
 	private int leadTime;
@@ -39,7 +39,7 @@ public class MasterPlanSchedule {
 	
 	public MasterPlanSchedule(String lotSizingMethod, int leadTime, int initialStock, int securityStock,
 			String productCode, String productName, double costArticle, double preparationCost, double maintenanceCost,
-			String periodicity) {
+			String periodicity, int TPeriodOFSupply) {
 		this.lotSizingMethod = lotSizingMethod;
 		this.leadTime = leadTime;
 		this.initialStock = initialStock;
@@ -50,8 +50,9 @@ public class MasterPlanSchedule {
 		this.preparationCost = preparationCost;
 		this.maintenanceCost = maintenanceCost;
 		this.periodicity = periodicity;
+		this.TPeriodOFSupply = TPeriodOFSupply;
 		
-		lotSizingMethods = new LotSizingMethods();
+//		lotSizingMethods = new LotSizingMethods();
 		
 		bruteRequirements = new ArrayList<Integer>();
 		scheduledReceptions = new ArrayList<Integer>();

@@ -394,7 +394,7 @@ public class PrincipalController  implements Initializable{
 
 	    @FXML
 	    void pressendButUpdateData(ActionEvent event) {
-			MasterPlanSchedule mps = new MasterPlanSchedule(cbLotTec.getValue(), Integer.parseInt(tfLeadTime.getText()), Integer.parseInt(tfAvalibleInvetary.getText()), Integer.parseInt(tfSecurityInventory.getText()), tfCode.getText(), tfItemName.getText(), Double.parseDouble(tfItemCost.getText()), Double.parseDouble(tfOrderCost.getText()), Double.parseDouble(tfMaintenanceCost.getText()), "");
+			MasterPlanSchedule mps = new MasterPlanSchedule(cbLotTec.getValue(), Integer.parseInt(tfLeadTime.getText()), Integer.parseInt(tfAvalibleInvetary.getText()), Integer.parseInt(tfSecurityInventory.getText()), tfCode.getText(), tfItemName.getText(), Double.parseDouble(tfItemCost.getText()), Double.parseDouble(tfOrderCost.getText()), Double.parseDouble(tfMaintenanceCost.getText()), "", 0);
 			for(int i = 0; i < textFBruteRequirements.size(); i++) {
 				mps.addBruteRequirement(Integer.parseInt(textFBruteRequirements.get(i).getText()));
 				mps.addScheduleReception(Integer.parseInt(textFScheduledReceptions.get(i).getText()));

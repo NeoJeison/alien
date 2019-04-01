@@ -108,7 +108,7 @@ public class MPSView implements Initializable{
 
 	@FXML
 	void pressendButUpdateData(ActionEvent event) {
-		MasterPlanSchedule mps = new MasterPlanSchedule(CbLotTec.getValue(), Integer.parseInt(TfLeadTime.getText()), Integer.parseInt(TfAvalibleInvetary.getText()), Integer.parseInt(TfSecurityInventory.getText()), TfCode.getText(), TfItemName.getText(), Double.parseDouble(TfItemCost.getText()), Double.parseDouble(TfOrderCost.getText()), Double.parseDouble(TfMaintenanceCost.getText()), "");
+		MasterPlanSchedule mps = new MasterPlanSchedule(CbLotTec.getValue(), Integer.parseInt(TfLeadTime.getText()), Integer.parseInt(TfAvalibleInvetary.getText()), Integer.parseInt(TfSecurityInventory.getText()), TfCode.getText(), TfItemName.getText(), Double.parseDouble(TfItemCost.getText()), Double.parseDouble(TfOrderCost.getText()), Double.parseDouble(TfMaintenanceCost.getText()), "", 0);
 		for(int i = 0; i < textFBruteRequirements.size(); i++) {
 			mps.addBruteRequirement(Integer.parseInt(textFBruteRequirements.get(i).getText()));
 			mps.addScheduleReception(Integer.parseInt(textFScheduledReceptions.get(i).getText()));
